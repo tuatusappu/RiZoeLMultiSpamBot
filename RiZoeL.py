@@ -833,7 +833,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("𝐉𝐨𝐢𝐧 𝐇𝐨𝐠𝐲𝐚 𝐒𝐢𝐫")
+                await event.edit("𝗝𝗢𝗜𝗡 𝗛𝗢𝗚𝗬𝗔 𝗕𝗦𝗗𝗞 𝗔𝗕 𝗕𝗧𝗔 𝗞𝗜𝗦𝗞𝗢 𝗣𝗘𝗟𝗡𝗔")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -877,7 +877,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("𝐉𝐨𝐢𝐧 𝐇𝐨𝐠𝐲𝐚 𝐒𝐢𝐫")
+                await event.edit("𝗝𝗢𝗜𝗡 𝗛𝗢𝗚𝗬𝗔 𝗔𝗕 𝗕𝗧𝗔 𝗞𝗜𝗦𝗞𝗢 𝗣𝗘𝗟𝗡𝗔")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -916,11 +916,11 @@ async def _(e):
         if len(e.text) == 7:
             bc = rizoel[0]
             bc = int(bc)
-            text = "RiZoeL Spam Bot Leaving....."
+            text = "𝗧𝗦𝗙 𝗟𝗘𝗔𝗩𝗜𝗡𝗚 𝗧𝗛𝗜𝗦 𝗥𝗔𝗡𝗗𝗜 𝗚𝗥𝗢𝗨𝗣...."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left")
+                await event.edit(" 𝗛𝗢 𝗚𝗬𝗔 𝗟𝗘𝗙𝗧 𝗬𝗘 𝗥𝗔𝗡𝗗𝗜 𝗚𝗥𝗢𝗨𝗣")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1307,7 +1307,7 @@ async def _(e):
             qeue = que.get(g)
             appendable = [g]
             qeue.append(appendable)
-            text = "Activated Reply Raid"
+            text = "𝗥𝗨𝗞 𝗝𝗔 𝗔𝗕 𝗜𝗦𝗞𝗜 𝗠𝗔𝗔 𝗖𝗛𝗢𝗗 𝗗𝗨𝗡𝗚𝗔 🥵"
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -1317,7 +1317,7 @@ async def _(e):
             qeue = que.get(g)
             appendable = [g]
             qeue.append(appendable)
-            text = "Activated Reply Raid"
+            text = "𝗔𝗕 𝗜𝗦𝗞𝗜 𝗠𝗔𝗔 𝗖𝗛𝗢𝗗 𝗗𝗨𝗡𝗚𝗔 🥵"
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1366,7 +1366,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "De-Activated Reply Raid"
+            text = "𝗕𝗛𝗔𝗚𝗚 𝗝𝗔 𝗕𝗦𝗗𝗞 𝗔𝗔𝗝 𝗞𝗘 𝗟𝗜𝗬𝗘 𝗜𝗧𝗡𝗔 𝗛𝗜 𝗞𝗔𝗙𝗜 𝗛𝗔𝗜 😂"
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -1377,7 +1377,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "De-Activated Reply Raid"
+            text = "𝗕𝗛𝗔𝗚𝗚 𝗝𝗔 𝗕𝗦𝗗𝗞 𝗔𝗔𝗝 𝗞𝗘 𝗟𝗜𝗬𝗘 𝗜𝗧𝗡𝗔 𝗛𝗜 𝗞𝗔𝗙𝗜 𝗛𝗔𝗜"
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1527,7 +1527,7 @@ async def restart(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 async def alive(e):
     if e.sender_id in SMEX_USERS:
-        text = " ♡︎ 𝐑ɪ𝐙ᴏᴇ𝐋 𝐌ᴜʟᴛ𝐈 𝐒ᴘᴀ𝐌 𝐁ᴏ𝐓 ♡︎\n\n\n 𝐑ɪ𝐙ᴏᴇ𝐋 𝐒ᴘᴀᴍ ɪs 𝐀ʟɪᴠᴇ !!\n\n ┏━━━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : @DNHxHELL\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : 𝗥𝗶𝗭𝗼𝗲𝗟\n ┗━━━━━━━━━━━━━━━━━━━\n "
+        text = "𝗧𝗦𝗙 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧 😎\n\n\n 𝗝𝗜𝗡𝗗𝗔 𝗛𝗨 𝗕𝗦𝗗𝗞 !!\n\n ┏━━━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : @TSFNETWORK\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : 𝗥𝗶𝗭𝗼𝗲𝗟\n ┗━━━━━━━━━━━━━━━━━━━\n "
         await e.reply(text, parse_mode=None, link_preview=None )
 
                         
