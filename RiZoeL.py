@@ -163,8 +163,8 @@ async def start_rizoel():
         try:
             print("Booting Up The Client 3")
             await  wdk.start()
-            await wdk(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await wdk(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await wdk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
+            await wdk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
             botme = await wdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -239,8 +239,8 @@ async def start_rizoel():
         try:
             print("Booting Up The Client 6")
             await adk.start()
-            await adk(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await adk(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await adk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
+            await adk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
             botme = await adk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -264,8 +264,8 @@ async def start_rizoel():
         try:
             print("Booting Up The Client 7")
             await bdk.start()
-            await bdk(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await bdk(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await bdk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
+            await bdk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
             botme = await bdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -290,8 +290,8 @@ async def start_rizoel():
         try:
             print("Booting Up The Client 8")
             await cdk.start()
-            await cdk(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await cdk(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await cdk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
+            await cdk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
             botme = await cdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -315,8 +315,8 @@ async def start_rizoel():
         try:
             print("Booting Up The Client 9")
             await ddk.start()
-            await ddk(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await ddk(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await ddk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
+            await ddk(functions.channels.JoinChannelRequest(channel="@TSFNETWORK"))
             botme = await ddk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -787,11 +787,11 @@ async def _(e):
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
             bio = str(rizoel[0])
-            text = "Changing Bio"
+            text = " 𝗕𝗔𝗗𝗔𝗟 𝗥𝗛𝗔 𝗛𝗨 𝗕𝗦𝗗𝗞!"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By RiZoeL Spam Bot")
+                await event.edit("𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 𝗖𝗛𝗔𝗡𝗚𝗘𝗗 𝗕𝗜𝗢 𝗜𝗡 𝗧𝗦𝗙 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧!")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1413,7 +1413,7 @@ async def _(e):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "ℙ𝕆ℕ𝔾!"
+        text = "𝗧𝗦𝗙!"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
@@ -1559,24 +1559,18 @@ async def alive(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 𝐑𝐢𝐙𝐨𝐞𝐋 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = " 𝗔𝗩𝗔𝗜𝗟𝗔𝗕𝗟𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗜𝗡 𝗧𝗦𝗙 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
 
     
         
-text = """
-┏━━┓━━┏━━━┓━━━━━━━━┏┓━
-┃┏┓┃┏┓┃┏━┓┃━━━━━━━━┃┃━
-┃┗┛┃┗┛┗┛━┛┃┏━━┓┏━━┓┃┃━
-┃━━┛┏┓┃┏━┏┓┃┏┓┃┃┏┓┃┃┃━
-┃┃┃┃┃┃┃┗━┛┃┃┗┛┃┃┃━┫┃┗━┓
-┗┛┗┛┗┛┗━━━┛┗━━┛┗━━┛┗━━┛"""
+text = """  𝗧𝗦𝗙 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧 """
 
 print(text)
 print("")
-print("SMEX! Rɪᴢᴏᴇʟ Multi Spam Bot Started Sucessfully.")
+print("SMEX!𝗧𝗦𝗙 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧 𝗦𝗧𝗔𝗥𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
